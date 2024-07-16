@@ -15,46 +15,50 @@
   <body>
     <div class="weather-app">
       <header>
-        <form action="">
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>San Francisco</h1>
-          <p>
-            Monday 12:12, sunny
-            <br />
-            Humidity:30%, Wind: 3.13km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">San Francisco</h1>
+            <p class="weather-app-details">
+              Monday 12:12, sunny
+              <br />
+              Humidity: <strong>30%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌞</div>
+            <div class="weather-app-temperature">36</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌞 36°C</div>
       </main>
-      <ul>
-        <li>Tuesday</li>
-        <li>Wednesday</li>
-        <li>Thursday</li>
-        <li>Friday</li>
-        <li>Saturday</li>
-        <li>Sunday</li>
-      </ul>
+
       <footer>
         This project was coded by
         <a href="https://github.com/carolinadoliveira" target="_blank"
           >Carolina Oliveira</a
         >
-        is open-sourced on
-        <a href="https://github.com/carolinadoliveira/meteo" target="_blank"
-          >GitHub</a
+        is
+        <a href="https://github.com/carolinadoliveira/meteo" target="_blank">
+          open-sourced on GitHub</a
         >
-        and hosted on
+        and
         <a
           href="https://meteo-app-shecodes-project.netlify.app/"
           target="_blank"
         >
-          Netlify</a
+          hosted on Netlify</a
         >
       </footer>
     </div>
